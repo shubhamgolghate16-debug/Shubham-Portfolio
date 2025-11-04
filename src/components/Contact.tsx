@@ -59,12 +59,6 @@ const Contact = () => {
               </a>
             ))}
           </div>
-
-          <Button size="lg" className="shadow-elegant text-lg px-8 py-6">
-            My 1st Full Stack Website
-          </Button>
-        </div>
-      </div>
     </section>
   );
 };

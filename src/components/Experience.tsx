@@ -6,7 +6,7 @@ const Experience = () => {
     {
       role: "Senior Product Manager - Payments",
       company: "Booking.com",
-      period: "2021 - Present",
+      period: "2022 - Present",
       location: "Amsterdam, Netherlands",
       achievements: [
         "Led Partner Business Portal, enabling 4M hotel partners to manage their finances anytime anywhere",
@@ -30,15 +30,15 @@ const Experience = () => {
       ],
     },
     {
-      role: "Associate Product Manager",
-      company: "PhonePe",
-      period: "2017 - 2018",
+      role: "Product Manager - Fintech",
+      company: "Mahindra Comviva",
+      period: "2019 - 2021",
       location: "Bangalore, India",
       achievements: [
-        "Shipped payment features used by 50M+ active users",
-        "Implemented fraud detection system reducing chargebacks by 40%",
-        "Collaborated with NPCI on UPI infrastructure improvements",
-        "Optimized transaction flow reducing drop-off rates by 25%",
+        "Launched Multiple Products 0 to 1",
+        "Owned E2E product development to enhance user experience and reduce the check-out time by 33%",
+        "Owned E2E product launch and was involved in the product ideation, roadmap, solutions and validation",
+        "Increasing income by 14% for business users of the wallet platform",
       ],
     },
   ];

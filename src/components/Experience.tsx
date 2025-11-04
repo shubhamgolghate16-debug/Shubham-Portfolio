@@ -4,15 +4,19 @@ import { Badge } from "@/components/ui/badge";
 const Experience = () => {
   const experiences = [
     {
-      role: "Senior Product Manager - Payments",
+      role: "Product Manager - Payments Platform",
       company: "Booking.com",
       period: "2021 - Present",
       location: "Amsterdam, Netherlands",
       achievements: [
-        "Led payment infrastructure modernization serving 1.5M daily transactions",
-        "Reduced payment processing costs by 30% through strategic routing optimization",
-        "Improved payment success rates from 87% to 94% across global markets",
-        "Launched alternative payment methods increasing conversion by 12%"
+        "Led Partner Business Portal, enabling 4M hotel partners to manage their finances anytime anywhere"
+
+        "Key Achievements:"
+        "Launched ACH payments in US via Adyen integration, improving collection rate by X% & XX% adoption"
+        "Launched PIX payments in Brazil, improving collection rate by XX% with XX% adoption in 6 months"
+        "Led the launch of multiple bank transfer payment methods in LATAM improving collection rate by XX%"
+        "Spearheaded the launch of multiple self service use cases , saving millions annually in support overhead"
+        "Enabled cross-border tax payments in Italy and New Zealand, helping reduce compliance liabilities by millions"
       ]
     },
     {

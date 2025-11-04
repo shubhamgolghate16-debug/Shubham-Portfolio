@@ -83,6 +83,19 @@ const PassionProjects = () => {
                   </Button>
                 </CardFooter>
               )}
+              {index === 1 && (
+                <CardFooter>
+                  <Button asChild variant="secondary" className="w-full">
+                    <a
+                      href="https://github.com/shubhamgolghate16-debug/travel-news-automation"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View on GitHub <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </CardFooter>
+              )}
             </Card>
           ))}
         </div>

@@ -21,9 +21,9 @@ const PassionProjects = () => {
     {
       icon: Code,
       title: "Full Stack Development",
-      description: "Web applications with modern technologies",
-      tags: ["React", "Node.js", "TypeScript", "Supabase"],
-      highlights: ["Responsive web applications", "Backend API development", "Database design and optimization"],
+      description: "Newsletter web application",
+      tags: ["Bolt", "Node.js", "TypeScript", "Supabase"],
+      highlights: ["Responsive web applications", "Gmail integration", "Coding Copilot"],
     },
   ];
 

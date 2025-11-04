@@ -12,7 +12,7 @@ const About = () => {
           <div className="flex justify-center">
             <Avatar className="w-64 h-64 md:w-80 md:h-80 shadow-elegant">
               <AvatarImage src="/placeholder.svg" alt="Profile" />
-              <AvatarFallback className="text-6xl">SG</AvatarFallback>
+              <AvatarFallback className="text-5xl">SG</AvatarFallback>
             </Avatar>
           </div>
           

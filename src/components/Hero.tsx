@@ -36,7 +36,7 @@ const Hero = () => {
               className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-[#051923] transition-smooth text-lg px-8 py-6"
             >
               <Mail className="mr-2 h-5 w-5" />
-              Get In Touch
+              --
             </Button>
           </div>
 

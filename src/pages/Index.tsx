@@ -2,9 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import SkillsHighlights from "@/components/SkillsHighlights";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
-import SkillsProgress from "@/components/SkillsProgress";
+import PassionProjects from "@/components/PassionProjects";
 import Contact from "@/components/Contact";
 
 const Index = () => {
@@ -14,9 +12,7 @@ const Index = () => {
       <Hero />
       <About />
       <SkillsHighlights />
-      <Experience />
-      <Education />
-      <SkillsProgress />
+      <PassionProjects />
       <Contact />
       
       {/* Footer */}

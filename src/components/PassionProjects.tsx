@@ -85,7 +85,7 @@ const PassionProjects = () => {
               )}
               {index === 1 && (
                 <CardFooter>
-                  <Button asChild variant="secondary" className="w-full">
+                  <Button asChild className="w-full">
                     <a
                       href="https://github.com/shubhamgolghate16-debug/travel-news-automation"
                       target="_blank"

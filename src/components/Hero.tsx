@@ -28,7 +28,7 @@ const Hero = () => {
               className="text-white hover:opacity-90 text-lg px-8 py-6"
             >
               <Download className="mr-2 h-5 w-5" />
-              coming soon
+              Resume Coming Soon
             </Button>
             <Button
               size="lg"

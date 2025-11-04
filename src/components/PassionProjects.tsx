@@ -6,48 +6,33 @@ const PassionProjects = () => {
   const projects = [
     {
       icon: Bot,
-      title: "LLM Applications",
-      description: "Building intelligent applications powered by Large Language Models",
-      tags: ["OpenAI", "LangChain", "RAG", "AI Agents"],
-      highlights: [
-        "Conversational AI interfaces",
-        "Document analysis systems",
-        "Custom AI workflows"
-      ]
+      title: "LLM Applications Chatbot",
+      description: "Product Management Tutor chatbot using gpt-4o",
+      tags: ["gpt-4o", "Web Crawler", "What's app", "AI Agents"],
+      highlights: ["Conversational AI interface", "Document analysis systems", "Trained on PM data"],
     },
     {
       icon: Zap,
       title: "Process Automation",
-      description: "Creating efficient automation solutions to streamline workflows",
-      tags: ["Python", "APIs", "Scripting", "Integration"],
-      highlights: [
-        "Data pipeline automation",
-        "API integrations",
-        "Workflow optimization"
-      ]
+      description: "Travel News Voice Notes",
+      tags: ["n8n", "gpt-4o", "Eleven Labs TTS", "Slack Integration"],
+      highlights: ["Workflow automation", "LLM & 3rd Party integrations", "Travel News consumption optimization"],
     },
     {
       icon: Code,
       title: "Full Stack Development",
-      description: "Building end-to-end web applications with modern technologies",
+      description:
+        "Built end-to-end web applications with modern technologies to deliver newsletter to your gmail inbox",
       tags: ["React", "Node.js", "TypeScript", "Supabase"],
-      highlights: [
-        "Responsive web applications",
-        "Backend API development",
-        "Database design and optimization"
-      ]
-    }
+      highlights: ["Responsive web applications", "Gmail Integration", "API Integration"],
+    },
   ];
 
   return (
     <section id="passion-projects" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
-          Passion Projects
-        </h2>
-        <p className="text-center text-muted-foreground text-lg mb-16">
-          Automation, LLMs and Full Stack Development
-        </p>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">Passion Projects</h2>
+        <p className="text-center text-muted-foreground text-lg mb-16">Automation, LLMs and Full Stack Development</p>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
@@ -57,9 +42,7 @@ const PassionProjects = () => {
                   <project.icon className="h-8 w-8 text-primary" />
                 </div>
                 <CardTitle className="text-2xl">{project.title}</CardTitle>
-                <CardDescription className="text-base mt-2">
-                  {project.description}
-                </CardDescription>
+                <CardDescription className="text-base mt-2">{project.description}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex flex-wrap gap-2">

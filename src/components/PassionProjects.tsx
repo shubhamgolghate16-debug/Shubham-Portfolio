@@ -1,6 +1,7 @@
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Bot, Zap, Code } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Bot, Zap, Code, ExternalLink } from "lucide-react";
 
 const PassionProjects = () => {
   const projects = [
@@ -60,6 +61,15 @@ const PassionProjects = () => {
                   ))}
                 </ul>
               </CardContent>
+              {index === 0 && (
+                <CardFooter>
+                  <Button asChild className="w-full">
+                    <a href="https://wa.me/31614842438?text=Hello%2C%20this%20is%20a%20test%20message" target="_blank" rel="noopener noreferrer">
+                      Try Chatbot <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </CardFooter>
+              )}
             </Card>
           ))}
         </div>

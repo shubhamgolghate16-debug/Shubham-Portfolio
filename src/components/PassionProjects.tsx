@@ -14,8 +14,8 @@ const PassionProjects = () => {
     {
       icon: Zap,
       title: "Process Automation",
-      description: "Creating efficient automation solutions to streamline workflows",
-      tags: ["Python", "APIs", "Scripting", "Integration"],
+      description: "On demand travel news voice notes ",
+      tags: ["n8n", "gpt-4o", "Text-to-speech", "Slack"],
       highlights: ["Data pipeline automation", "API integrations", "Workflow optimization"],
     },
     {

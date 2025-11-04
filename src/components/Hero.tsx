@@ -42,7 +42,7 @@ const Hero = () => {
 
           <div className="flex gap-6 pt-8">
             <a
-              href="https://github.com"
+              href="https://github.com/shubhamgolghate16-debug?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/70 hover:text-primary transition-smooth"

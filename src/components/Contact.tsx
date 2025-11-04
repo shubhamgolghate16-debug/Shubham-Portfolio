@@ -19,7 +19,7 @@ const Contact = () => {
       icon: Github,
       label: "GitHub",
       value: "View Projects",
-      href: "https://github.com",
+      href: "https://github.com/shubhamgolghate16-debug?tab=repositories",
     },
     {
       icon: FileText,

@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 217 33% 17%;
 
-    --primary: 217 91% 60%;
+    --primary: 160 84% 39%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 214 32% 91%;
@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 142 76% 36%;
+    --accent: 160 84% 39%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -39,9 +39,9 @@ All colors MUST be HSL.
     --radius: 0.75rem;
     
     /* Custom PM Portfolio tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(230 80% 65%) 50%, hsl(142 76% 36%) 100%);
+    --hero-bg: 215 28% 17%;
     --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(214 32% 98%) 100%);
-    --shadow-elegant: 0 20px 60px -15px hsl(217 91% 60% / 0.2);
+    --shadow-elegant: 0 20px 60px -15px hsl(160 84% 39% / 0.15);
     --shadow-card: 0 4px 24px -8px hsl(217 33% 17% / 0.08);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -72,7 +72,7 @@ All colors MUST be HSL.
     --popover: 217 33% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 217 91% 60%;
+    --primary: 160 84% 39%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 217 33% 17%;
@@ -81,7 +81,7 @@ All colors MUST be HSL.
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 142 76% 36%;
+    --accent: 160 84% 39%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
@@ -91,9 +91,9 @@ All colors MUST be HSL.
     --input: 217 33% 17%;
     --ring: 217 91% 60%;
     
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 50%) 0%, hsl(230 80% 55%) 50%, hsl(142 76% 36%) 100%);
+    --hero-bg: 215 28% 17%;
     --gradient-card: linear-gradient(180deg, hsl(217 33% 12%) 0%, hsl(217 33% 14%) 100%);
-    --shadow-elegant: 0 20px 60px -15px hsl(217 91% 40% / 0.3);
+    --shadow-elegant: 0 20px 60px -15px hsl(160 84% 39% / 0.2);
     --shadow-card: 0 4px 24px -8px hsl(0 0% 0% / 0.2);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

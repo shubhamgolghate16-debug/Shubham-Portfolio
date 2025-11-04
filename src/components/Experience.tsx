@@ -1,95 +1,79 @@
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+
 const Experience = () => {
   const experiences = [
     {
-      company: "Tech Unicorn Inc.",
-      role: "Senior Product Manager",
-      period: "2022 - Present",
+      role: "Senior Product Manager - Payments",
+      company: "Booking.com",
+      period: "2021 - Present",
+      location: "Amsterdam, Netherlands",
       achievements: [
-        "Led product strategy for $50M revenue vertical",
-        "Grew user base from 100K to 500K in 18 months",
-        "Launched 3 major features with 90%+ satisfaction"
+        "Led payment infrastructure modernization serving 1.5M daily transactions",
+        "Reduced payment processing costs by 30% through strategic routing optimization",
+        "Improved payment success rates from 87% to 94% across global markets",
+        "Launched alternative payment methods increasing conversion by 12%"
       ]
     },
     {
-      company: "Fast-Growing Startup",
-      role: "Product Manager",
-      period: "2020 - 2022",
+      role: "Product Manager - Fintech",
+      company: "Paytm",
+      period: "2018 - 2021",
+      location: "Bangalore, India",
       achievements: [
-        "First PM hire, established product process from scratch",
-        "Shipped mobile app that reached #3 in App Store category",
-        "Reduced churn by 25% through retention initiatives"
+        "Built merchant payment gateway handling $2B+ annual transaction volume",
+        "Launched QR code payment solution adopted by 500K+ merchants",
+        "Led cross-functional team of 15 engineers and designers",
+        "Reduced integration time for new merchants from 2 weeks to 3 days"
       ]
     },
     {
-      company: "Enterprise SaaS Company",
       role: "Associate Product Manager",
-      period: "2018 - 2020",
+      company: "PhonePe",
+      period: "2017 - 2018",
+      location: "Bangalore, India",
       achievements: [
-        "Supported 3 product lines serving 10K+ businesses",
-        "Conducted 100+ user interviews and research sessions",
-        "Collaborated with engineering teams across 4 time zones"
+        "Shipped payment features used by 50M+ active users",
+        "Implemented fraud detection system reducing chargebacks by 40%",
+        "Collaborated with NPCI on UPI infrastructure improvements",
+        "Optimized transaction flow reducing drop-off rates by 25%"
       ]
     }
   ];
 
   return (
-    <section className="py-24 bg-secondary/30" id="experience">
+    <section id="experience" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Experience
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Building products across different stages and scales
-            </p>
-          </div>
-          
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
-            
-            <div className="space-y-12">
-              {experiences.map((exp, index) => (
-                <div 
-                  key={index}
-                  className={`relative flex flex-col md:flex-row gap-8 ${
-                    index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                  }`}
-                >
-                  {/* Timeline dot */}
-                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10" />
-                  
-                  {/* Content */}
-                  <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
-                    <div className="bg-card p-6 rounded-2xl shadow-card border border-border transition-smooth hover:shadow-elegant">
-                      <div className="mb-4">
-                        <h3 className="text-2xl font-bold text-foreground mb-1">
-                          {exp.role}
-                        </h3>
-                        <p className="text-primary font-semibold">{exp.company}</p>
-                        <p className="text-sm text-muted-foreground mt-1">{exp.period}</p>
-                      </div>
-                      <ul className={`space-y-2 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
-                        {exp.achievements.map((achievement, i) => (
-                          <li 
-                            key={i}
-                            className="text-muted-foreground flex items-start gap-2"
-                          >
-                            <span className={`text-accent mt-1 ${index % 2 === 0 ? 'md:order-2' : ''}`}>•</span>
-                            <span>{achievement}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
+          Professional Experience
+        </h2>
+        
+        <div className="max-w-5xl mx-auto space-y-8">
+          {experiences.map((exp, index) => (
+            <Card key={index} className="shadow-card hover:shadow-elegant transition-smooth">
+              <CardHeader>
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
+                  <div>
+                    <CardTitle className="text-2xl">{exp.role}</CardTitle>
+                    <CardDescription className="text-lg mt-2">
+                      <span className="text-primary font-semibold">{exp.company}</span> · {exp.location}
+                    </CardDescription>
                   </div>
-                  
-                  {/* Spacer for alternating layout */}
-                  <div className="flex-1 hidden md:block" />
+                  <Badge variant="secondary" className="self-start">{exp.period}</Badge>
                 </div>
-              ))}
-            </div>
-          </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3">
+                  {exp.achievements.map((achievement, idx) => (
+                    <li key={idx} className="flex items-start gap-3 text-muted-foreground">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

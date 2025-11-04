@@ -1,88 +1,62 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("about");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+      
+      // Detect active section
+      const sections = ["about", "experience", "education", "skills", "contact"];
+      const current = sections.find(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top <= 100 && rect.bottom >= 100;
+        }
+        return false;
+      });
+      if (current) setActiveSection(current);
     };
+    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
     { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
-    { label: "Skills", href: "#skills" },
     { label: "Experience", href: "#experience" },
+    { label: "Education", href: "#education" },
+    { label: "Skills", href: "#skills" },
     { label: "Contact", href: "#contact" }
   ];
 
   return (
-    <nav 
-      className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-        isScrolled 
-          ? "bg-background/95 backdrop-blur-md shadow-card border-b border-border" 
-          : "bg-transparent"
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border transition-smooth">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a href="#" className="text-2xl font-bold">
-            <span className={isScrolled ? "text-foreground" : "text-white"}>PM</span>
-            <span className="text-primary">.</span>
+          <a href="#" className="text-2xl font-bold text-foreground">
+            Shubham Golghate
           </a>
           
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link, index) => (
+            {navLinks.map((link) => (
               <a
-                key={index}
+                key={link.label}
                 href={link.href}
-                className={`font-medium transition-smooth hover:text-primary ${
-                  isScrolled ? "text-foreground" : "text-white"
+                className={`font-medium transition-smooth hover:text-primary relative pb-1 ${
+                  activeSection === link.href.substring(1)
+                    ? "text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary"
+                    : "text-foreground"
                 }`}
               >
                 {link.label}
               </a>
             ))}
           </div>
-          
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? (
-              <X className={isScrolled ? "text-foreground" : "text-white"} />
-            ) : (
-              <Menu className={isScrolled ? "text-foreground" : "text-white"} />
-            )}
-          </Button>
         </div>
-        
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-4">
-            {navLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                className="block py-2 text-foreground font-medium hover:text-primary transition-smooth"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-        )}
       </div>
     </nav>
   );

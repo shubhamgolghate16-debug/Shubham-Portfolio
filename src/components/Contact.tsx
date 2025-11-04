@@ -6,20 +6,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "shubhamgolghate@gmail.com",
-      href: "mailto:shubhamgolghate@gmail.com",
+      value: "shubhamgolghate16@gmail.com",
+      href: "mailto:shubhamgolghate16@gmail.com",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Connect on LinkedIn",
-      href: "https://www.linkedin.com/in/shubham-golghate/",
+      href: "https://linkedin.com",
     },
     {
       icon: Github,
       label: "GitHub",
       value: "View Projects",
-      href: "https://github.com/shubhamgolghate16-debug?tab=repositories",
+      href: "https://github.com",
     },
     {
       icon: FileText,

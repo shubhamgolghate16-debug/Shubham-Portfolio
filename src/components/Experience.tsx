@@ -10,10 +10,10 @@ const Experience = () => {
       location: "Amsterdam, Netherlands",
       achievements: [
         "Led Partner Business Portal, enabling 4M hotel partners to manage their finances anytime anywhere",
-        "Launched ACH payments in US via Adyen integration, improving collection rate by X% & XX% adoption",
+        "Launched ACH payments in US via Adyen integration, improving collection rate by X% and XX% adoption",
         "Launched PIX payments in Brazil, improving collection rate by XX% with XX% adoption in 6 months",
         "Launched alternative payment methods increasing conversion by XX%",
-        "Spearheaded the launch of multiple self service use cases , saving millions annually in support overhead",
+        "Spearheaded the launch of multiple self service use cases, saving millions annually in support overhead",
         "Enabled cross-border tax payments in Italy and New Zealand, helping reduce compliance liabilities by millions",
       ],
     },

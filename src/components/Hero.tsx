@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, Mail, Github, Linkedin } from "lucide-react";
+import { Download, Mail, Github, Linkedin, ExternalLink } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -34,9 +34,12 @@ const Hero = () => {
               size="lg"
               variant="outline"
               className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-[#051923] transition-smooth text-lg px-8 py-6"
+              asChild
             >
-              <Mail className="mr-2 h-5 w-5" />
-              --
+              <a href="https://topmate.io/shubham_golghate" target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="mr-2 h-5 w-5" />
+                Book a Call
+              </a>
             </Button>
           </div>
 

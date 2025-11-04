@@ -6,25 +6,24 @@ const PassionProjects = () => {
   const projects = [
     {
       icon: Bot,
-      title: "LLM Applications Chatbot",
-      description: "Product Management Tutor chatbot using gpt-4o",
-      tags: ["gpt-4o", "Web Crawler", "What's app", "AI Agents"],
-      highlights: ["Conversational AI interface", "Document analysis systems", "Trained on PM data"],
+      title: "LLM Applications",
+      description: "Building intelligent applications powered by Large Language Models",
+      tags: ["OpenAI", "LangChain", "RAG", "AI Agents"],
+      highlights: ["Conversational AI interfaces", "Document analysis systems", "Custom AI workflows"],
     },
     {
       icon: Zap,
       title: "Process Automation",
-      description: "Travel News Voice Notes",
-      tags: ["n8n", "gpt-4o", "Eleven Labs TTS", "Slack Integration"],
-      highlights: ["Workflow automation", "LLM & 3rd Party integrations", "Travel News consumption optimization"],
+      description: "Creating efficient automation solutions to streamline workflows",
+      tags: ["Python", "APIs", "Scripting", "Integration"],
+      highlights: ["Data pipeline automation", "API integrations", "Workflow optimization"],
     },
     {
       icon: Code,
       title: "Full Stack Development",
-      description:
-        "Built end-to-end web applications with modern technologies to deliver newsletter to your gmail inbox",
+      description: "Web applications with modern technologies",
       tags: ["React", "Node.js", "TypeScript", "Supabase"],
-      highlights: ["Responsive web applications", "Gmail Integration", "API Integration"],
+      highlights: ["Responsive web applications", "Backend API development", "Database design and optimization"],
     },
   ];
 

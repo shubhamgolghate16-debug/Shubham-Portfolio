@@ -15,9 +15,9 @@ const Hero = () => {
             <p className="text-2xl md:text-3xl text-white/90 font-medium">Product Manager</p>
 
             <p className="text-xl md:text-2xl text-white/80 max-w-3xl leading-relaxed pt-4">
-              With 7 years of experience in Fintech and Payments, I've built products at scale at Booking.com and led
-              payment infrastructure initiatives. I specialize in turning complex problems into elegant solutions that
-              drive business impact.
+              I'm a seasoned Product Manager with 7 years in the Fintech and Payments industry, fueled by a passion for
+              innovation. Currently leading teams at Booking.com, where I oversee products responsible for over 50% of
+              their revenue - that translates to billions of travel dreams realized!
             </p>
           </div>
 

@@ -64,7 +64,20 @@ const PassionProjects = () => {
               {index === 0 && (
                 <CardFooter>
                   <Button asChild className="w-full">
-                    <a href="https://wa.me/31614842438?text=Hello%2C%20this%20is%20a%20test%20message" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://wa.me/31614842438?text=Hello%2C%20this%20is%20a%20test%20message"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => {
+                        // Ensure it opens outside the preview iframe (WhatsApp blocks iframing)
+                        e.preventDefault();
+                        window.open(
+                          "https://wa.me/31614842438?text=Hello%2C%20this%20is%20a%20test%20message",
+                          "_blank",
+                          "noopener,noreferrer",
+                        );
+                      }}
+                    >
                       Try Chatbot <ExternalLink className="ml-2 h-4 w-4" />
                     </a>
                   </Button>

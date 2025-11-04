@@ -8,14 +8,14 @@ const PassionProjects = () => {
     {
       icon: Bot,
       title: "What's app Chatbot",
-      description: "Product Management Tutor chatbot that helps you learn PM craft",
+      description: "Product Management Tutor chatbot",
       tags: ["What's app", "gpt-4o", "AI Agent", "RAG"],
       highlights: ["Conversational AI interfaces", "Document analysis systems", "Text Based"],
     },
     {
       icon: Zap,
       title: "Process Automation",
-      description: "On demand travel news voice notes.                             ",
+      description: "On demand travel news voice notes                             ",
       tags: ["n8n", "gpt-4o", "Text-to-speech", "Slack"],
       highlights: ["Data pipeline automation", "API integrations", "Workflow optimization"],
     },

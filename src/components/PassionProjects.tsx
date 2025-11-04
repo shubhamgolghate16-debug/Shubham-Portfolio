@@ -23,7 +23,7 @@ const PassionProjects = () => {
       icon: Code,
       title: "Full Stack Development",
       description: "My Full Stack PM Portfolio Webiste ",
-      tags: ["React", "Tailwind CSS", "TypeScript", "Supabase"],
+      tags: ["React", "CSS", "TypeScript", "Supabase"],
       highlights: ["Responsive web applications", "Lovable", "Coding Copilot"],
     },
   ];

@@ -9,7 +9,7 @@ const Navigation = () => {
       setIsScrolled(window.scrollY > 50);
       
       // Detect active section
-      const sections = ["about", "experience", "education", "skills", "contact"];
+      const sections = ["about", "passion-projects", "contact"];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -27,9 +27,7 @@ const Navigation = () => {
 
   const navLinks = [
     { label: "About", href: "#about" },
-    { label: "Experience", href: "#experience" },
-    { label: "Education", href: "#education" },
-    { label: "Skills", href: "#skills" },
+    { label: "Passion Projects", href: "#passion-projects" },
     { label: "Contact", href: "#contact" }
   ];
 

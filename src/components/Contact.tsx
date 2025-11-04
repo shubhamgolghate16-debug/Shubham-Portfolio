@@ -61,7 +61,6 @@ const Contact = () => {
           </div>
 
           <Button size="lg" className="shadow-elegant text-lg px-8 py-6">
-            <Mail className="mr-2 h-5 w-5" />
             My 1st Full Stack Website
           </Button>
         </div>

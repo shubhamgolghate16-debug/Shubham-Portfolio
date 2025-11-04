@@ -65,7 +65,7 @@ const PassionProjects = () => {
                 <CardFooter>
                   <Button asChild className="w-full">
                     <a
-                      href="https://wa.me/31614842438?text=Hello%2C%20this%20is%20a%20test%20message"
+                      href="https://api.whatsapp.com/send/?phone=31614842438&text=Hello%2C+this+is+a+test+message&type=phone_number&app_absent=0"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => {

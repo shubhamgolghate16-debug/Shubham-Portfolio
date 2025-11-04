@@ -6,9 +6,9 @@ const PassionProjects = () => {
   const projects = [
     {
       icon: Bot,
-      title: "LLM Applications",
-      description: "Building intelligent applications powered by Large Language Models",
-      tags: ["OpenAI", "LangChain", "RAG", "AI Agents"],
+      title: "What's app Chatbot",
+      description: "Product Management Tutor chatbot that helps you learn PM craft",
+      tags: ["What's app", "gpt-4o", "AI Agent", "RAG"],
       highlights: ["Conversational AI interfaces", "Document analysis systems", "Custom AI workflows"],
     },
     {

@@ -13,7 +13,7 @@ const Contact = () => {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Connect on LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/shubham-golghate/",
     },
     {
       icon: Github,

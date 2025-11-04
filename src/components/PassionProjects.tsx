@@ -96,6 +96,19 @@ const PassionProjects = () => {
                   </Button>
                 </CardFooter>
               )}
+              {index === 2 && (
+                <CardFooter>
+                  <Button asChild className="w-full">
+                    <a
+                      href="https://github.com/shubhamgolghate16-debug/Shubham-Portfolio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View on GitHub <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </CardFooter>
+              )}
             </Card>
           ))}
         </div>

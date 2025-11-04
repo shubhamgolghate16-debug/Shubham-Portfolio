@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-white py-20">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="space-y-4">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
               <span className="text-white">Shubham </span>
               <span className="text-primary">Golghate</span>
             </h1>

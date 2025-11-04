@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import profileImage from "@/assets/profile.jpg";
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <Avatar className="w-64 h-64 md:w-80 md:h-80 shadow-elegant">
-              <AvatarImage src="/placeholder.svg" alt="Profile" />
+              <AvatarImage src={profileImage} alt="Shubham Golghate Profile" />
               <AvatarFallback className="text-5xl">SG</AvatarFallback>
             </Avatar>
           </div>

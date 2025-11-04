@@ -19,14 +19,14 @@ const Experience = () => {
     },
     {
       role: "Product Manager - Fintech",
-      company: "Paytm",
-      period: "2018 - 2021",
-      location: "Bangalore, India",
+      company: "Paysafe group",
+      period: "2021 - 2022",
+      location: "Hyderabad, India",
       achievements: [
-        "Built merchant payment gateway handling $2B+ annual transaction volume",
-        "Launched QR code payment solution adopted by 500K+ merchants",
-        "Led cross-functional team of 15 engineers and designers",
-        "Reduced integration time for new merchants from 2 weeks to 3 days",
+        "Own the E2E product development of credit risk product for high-risk merchants monitored by the risk team",
+        "Launched Periodic Review Form to enhanced operational efficiency accounting for $100K per annum cost savings",
+        "Increased portfolio coverage of MCRM product to 100% from 29% for monitoring the merchants",
+        "Currently working on building Merchant Risk Score Card using ML to reduce credit losses for Paysafe",
       ],
     },
     {

@@ -16,9 +16,9 @@ const About = () => {
 
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              I'm a seasoned Product Manager with 7 years in the Fintech and Payments industry, fueled by a passion for
-              innovation. Currently leading teams at Booking.com, where I oversee products responsible for over 50% of
-              their revenue - that translates to billions of travel dreams realized!
+              I have worked on both Platform products like Payments Platform, IDAM, Pricing Engine and customer facing
+              products like digital wallets, Ecommerce apps. This gave me a strong foundation in building complex
+              platforms and end user facing products.
             </p>
 
             <p>

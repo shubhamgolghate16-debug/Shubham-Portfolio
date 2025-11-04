@@ -24,7 +24,7 @@ const Contact = () => {
     {
       icon: FileText,
       label: "Resume",
-      value: "Download PDF",
+      value: "coming soon",
       href: "#",
     },
   ];
